@@ -1,0 +1,18 @@
+<html>
+<head></head>
+<body>
+  <p>Hello World!</p>
+  <!--
+  How to use the compiled library in browser.
+  Why Library? It is set by libraryName in webpack.config.js
+  -->
+  <script type="text/javascript" src="./lib/library.min.js"></script>
+  <script>
+  (function() {
+    var cat = new Library.Cat();
+    console.log(cat._name);
+    console.log(cat.name);
+  })();
+  </script>
+</body>
+</html>
